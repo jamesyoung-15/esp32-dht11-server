@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/CMakeFiles/bootloader
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/CMakeFiles/bootloader.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/CMakeFiles/bootloader-complete.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/jamesyoung/Documents/Personal_Projects/Programming/Practice/esp32/practice/temp-sensor/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
