@@ -148,5 +148,10 @@ esp_err_t get_handler(httpd_req_t *req)
 ```
 While this doesn't allow for a "live" dynamic realtime monitoring, it shows the temperature at the given time the webpage is requested.
 
+## Hardware Setup
+Extremely simple. Only need 3 connections: signal pin to pin 4 (or any other pin that can be set to input and output mode), middle pin to voltage (3.3-5V), and ground pin to ground. Ignore the LED just for testing.
+
+![alt text](./images/esp32.jpg)
+
 ## Next Steps
 As mentioned above, this server only shows a static page without realtime monitoring. This is the next feature I wish to implement in this project. Also I can add more modules/sensors.
