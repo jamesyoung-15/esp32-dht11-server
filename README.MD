@@ -29,7 +29,7 @@ Basic structure:
 3. DHT11 sends out low response signal for 80 us, then pulls up for 80us and readies for data transmission
 
 Relevant Code for instructions above:
-```
+``` C
 /*MCU sends out start signal to dht and dht responds*/
 void startSignal(void)
 { 
@@ -57,7 +57,7 @@ void startSignal(void)
 ![alt text](./images/dht11-diagram-4.png)
 
 Below is the code implementation to read and distinguish the high and low voltage as data:
-```
+``` C
 /*
 Read one byte/8 bit of DHT11 data transmission. Starts with 50 us of low voltage to signal new data then a high voltage for data.
 High voltage length of 26-28 us means "0", high voltage length greater than that is 1.
@@ -92,7 +92,7 @@ uint8_t readData(void)
 5. Now that we have the transmitted data in binary, we need to convert it to the relevant integers. There are a total of 40 bits or 5 bytes of data transmitted. The data format is as follows: [int rh, float rh, int temp, float temp, checksum], where each field is 8 bit or 1 byte. 
 
 Relevant code below:
-```
+``` C
 /*Use readvalue function to get the 5 bytes needed*/
 void getData(struct data *temp)
 {
@@ -122,7 +122,7 @@ Mainly referred to the documentation and example [here](https://docs.espressif.c
 
 Below shows how this is done, where we call the relevant functions for getting temperature and humidity values everytime a http request is sent:
 
-```
+``` C
 /* Our URI handler function to be called during GET /uri request */
 esp_err_t get_handler(httpd_req_t *req)
 {
