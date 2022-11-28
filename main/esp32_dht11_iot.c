@@ -234,6 +234,7 @@ esp_err_t get_handler(httpd_req_t *req)
     {
         printf("DHT11 Error!\r\n");
     }
+    vTaskDelay(3000 / portTICK_PERIOD_MS);
     //char htmlPage[]="URI GET Response";
     char htmlPage[BUFFERSIZE]={0};
     sprintf(htmlPage,"<<!DOCTYPE html><html>\n<head>\n<style>\nhtml {font-family: sans-serif; text-align: center;}\n</style>\n</head>\n<body>\n<div>\n<h1>ESP32 IoT Server</h1>\n</div>\n<div>\n<h3>Temperature and Humidity Monitor</h3>\n<p>DHT11 Temperature Reading: %d&deg;C</p>\n<p>DHT11 Humidity Reading: %d%%</p>\n</div>\n</body>\n</html> >",currentData.temperature,currentData.humidity);
